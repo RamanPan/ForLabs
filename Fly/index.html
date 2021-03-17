@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>Plane - Aero</title>
+        <title>Fly - Aero</title>
         <link href="../css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/font-awesome.min.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -36,26 +36,26 @@
                             <li class="navitem">
                                 <a href=".." class="nav-link">Welcome to Aero!</a>
                             </li>
-                            <li class="navitem active">
-                                <a href="./" class="nav-link">Plane</a>
-                            </li>
-                            <li class="navitem">
-                                <a href="../3/" class="nav-link">Trip</a>
-                            </li>
-                            <li class="navitem">
-                                <a href="../4/" class="nav-link">Member</a>
-                            </li>
-                            <li class="navitem">
-                                <a href="../5/" class="nav-link">Crew</a>
-                            </li>
-                            <li class="navitem">
-                                <a href="../6/" class="nav-link">Transit landings</a>
-                            </li>
-                            <li class="navitem">
-                                <a href="../7/" class="nav-link">Fly</a>
-                            </li>
                             <li class="navitem">
                                 <a href="../AirCarrier/" class="nav-link">AirCarrier</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../Crew/" class="nav-link">Crew</a>
+                            </li>
+                            <li class="navitem active">
+                                <a href="./" class="nav-link">Fly</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../Member/" class="nav-link">Member</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../Plane/" class="nav-link">Plane</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../Transitlangins/" class="nav-link">Transit landings</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../Trip/" class="nav-link">Trip</a>
                             </li>
                         </ul>
 
@@ -66,12 +66,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href=".." class="nav-link">
+                                <a rel="prev" href="../Crew/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="../3/" class="nav-link">
+                                <a rel="next" href="../Member/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -93,7 +93,7 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#plane" class="nav-link">Plane</a>
+            <li class="nav-item" data-level="1"><a href="#fly" class="nav-link">Fly</a>
               <ul class="nav flex-column">
             <li class="nav-item" data-level="2"><a href="#table" class="nav-link">Table</a>
               <ul class="nav flex-column">
@@ -114,7 +114,7 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="plane">Plane</h1>
+<h1 id="fly">Fly</h1>
 <h2 id="table">Table</h2>
 <table>
 <thead>
@@ -127,66 +127,94 @@
 </thead>
 <tbody>
 <tr>
-<td align="left">idPlane</td>
+<td align="left">Plane</td>
 <td align="left"><code>integer</code></td>
 <td align="left"><code>true</code></td>
-<td align="left"><code>null</code></td>
+<td align="left"><code>Plane_idPlane</code></td>
 </tr>
 <tr>
-<td align="left">Stamp</td>
-<td align="left"><code>varchar(20)</code></td>
+<td align="left">Trip</td>
+<td align="left"><code>integer</code></td>
+<td align="left"><code>true</code></td>
+<td align="left"><code>Trip_idTrip</code></td>
+</tr>
+<tr>
+<td align="left">Route</td>
+<td align="left"><code>varchar(40)</code></td>
 <td align="left"><code>false</code></td>
 <td align="left"><code>null</code></td>
 </tr>
 <tr>
-<td align="left">Places</td>
+<td align="left">Trans_land</td>
 <td align="left"><code>integer</code></td>
 <td align="left"><code>false</code></td>
-<td align="left"><code>null</code></td>
+<td align="left"><code>Trans_land_idTrans_land</code></td>
 </tr>
 <tr>
-<td align="left">Type</td>
-<td align="left"><code>varchar(20)</code></td>
-<td align="left"><code>false</code></td>
-<td align="left"><code>null</code></td>
-</tr>
-<tr>
-<td align="left">Speed</td>
-<td align="left"><code>float</code></td>
-<td align="left"><code>false</code></td>
-<td align="left"><code>null</code></td>
-</tr>
-<tr>
-<td align="left">AirCarrier</td>
+<td align="left">Crew</td>
 <td align="left"><code>integer</code></td>
 <td align="left"><code>false</code></td>
-<td align="left"><code>AirCarrier_idAirCarrier</code></td>
+<td align="left"><code>Crew_idCrew</code></td>
 </tr>
 </tbody>
 </table>
 <h2 id="create-table">Create table</h2>
-<pre><code>CREATE  TABLE Plane (
+<pre><code>CREATE  TABLE Fly (
 
-  idPlane integer NOT NULL PRIMARY KEY,
+  Plane_idPlane INT NOT NULL ,
 
-  Stamp VARCHAR(10) NOT NULL ,
+  Trip_idTrip INT NOT NULL ,
 
-  Places integer NOT NULL ,
+  Route VARCHAR(45) NOT NULL ,
 
-  Type VARCHAR(45) NOT NULL ,
+  Transit_landings_idTransit_landings INT NOT NULL ,
 
-  Speed FLOAT NOT NULL ,
+  Crew_idCrew INT NOT NULL ,
 
-  AirCarrier_idAirCarrier INT NOT NULL ,
+  PRIMARY KEY (Plane_idPlane, Trip_idTrip) ,
 
-  CONSTRAINT fk_Plane_AirCarrier1
+  CONSTRAINT fk_Plane_has_Trip_Plane1
 
-    FOREIGN KEY (AirCarrier_idAirCarrier )
+    FOREIGN KEY (Plane_idPlane)
 
-    REFERENCES AirCarrier (idAirCarrier) );
+    REFERENCES Plane (idPlane)
+
+    ON DELETE NO ACTION
+
+    ON UPDATE NO ACTION,
+
+  CONSTRAINT fk_Plane_has_Trip_Trip1
+
+    FOREIGN KEY (Trip_idTrip )
+
+    REFERENCES Trip (idTrip )
+
+    ON DELETE NO ACTION
+
+    ON UPDATE NO ACTION,
+
+  CONSTRAINT fk_Fly_Transit_landings1
+
+    FOREIGN KEY (Transit_landings_idTransit_landings)
+
+    REFERENCES Transit_landings(idTransit_landings)
+
+    ON DELETE NO ACTION
+
+    ON UPDATE NO ACTION,
+
+  CONSTRAINT fk_Fly_Crew1
+
+    FOREIGN KEY (Crew_idCrew)
+
+    REFERENCES Crew(idCrew)
+
+    ON DELETE NO ACTION
+
+    ON UPDATE NO ACTION);
 </code></pre>
 <h2 id="commands">Commands</h2>
-<pre><code>INSERT INTO Plane VALUES (1,'Mark1',250,'Big',235,1), (2,'Mark3',350,'Big',335,2), (3,'Mark3',150,'Medium',235,3);
+<pre><code>INSERT INTO  Fly VALUES (1,1,'Good',1,1), (2,2,'Bad',2,2), (3,3,'Normal',3,3);
 </code></pre></div>
             </div>
         </div>

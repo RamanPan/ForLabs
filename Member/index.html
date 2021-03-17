@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>Fly - Aero</title>
+        <title>Member - Aero</title>
         <link href="../css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/font-awesome.min.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -37,25 +37,25 @@
                                 <a href=".." class="nav-link">Welcome to Aero!</a>
                             </li>
                             <li class="navitem">
-                                <a href="../2/" class="nav-link">Plane</a>
+                                <a href="../AirCarrier/" class="nav-link">AirCarrier</a>
                             </li>
                             <li class="navitem">
-                                <a href="../3/" class="nav-link">Trip</a>
+                                <a href="../Crew/" class="nav-link">Crew</a>
                             </li>
                             <li class="navitem">
-                                <a href="../4/" class="nav-link">Member</a>
-                            </li>
-                            <li class="navitem">
-                                <a href="../5/" class="nav-link">Crew</a>
-                            </li>
-                            <li class="navitem">
-                                <a href="../6/" class="nav-link">Transit landings</a>
+                                <a href="../Fly/" class="nav-link">Fly</a>
                             </li>
                             <li class="navitem active">
-                                <a href="./" class="nav-link">Fly</a>
+                                <a href="./" class="nav-link">Member</a>
                             </li>
                             <li class="navitem">
-                                <a href="../AirCarrier/" class="nav-link">AirCarrier</a>
+                                <a href="../Plane/" class="nav-link">Plane</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../Transitlangins/" class="nav-link">Transit landings</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../Trip/" class="nav-link">Trip</a>
                             </li>
                         </ul>
 
@@ -66,12 +66,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href="../6/" class="nav-link">
+                                <a rel="prev" href="../Fly/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="../AirCarrier/" class="nav-link">
+                                <a rel="next" href="../Plane/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -93,7 +93,7 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#fly" class="nav-link">Fly</a>
+            <li class="nav-item" data-level="1"><a href="#member" class="nav-link">Member</a>
               <ul class="nav flex-column">
             <li class="nav-item" data-level="2"><a href="#table" class="nav-link">Table</a>
               <ul class="nav flex-column">
@@ -114,7 +114,7 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="fly">Fly</h1>
+<h1 id="member">Member</h1>
 <h2 id="table">Table</h2>
 <table>
 <thead>
@@ -127,94 +127,54 @@
 </thead>
 <tbody>
 <tr>
-<td align="left">Plane</td>
+<td align="left">idMember</td>
 <td align="left"><code>integer</code></td>
 <td align="left"><code>true</code></td>
-<td align="left"><code>Plane_idPlane</code></td>
+<td align="left"><code>null</code></td>
 </tr>
 <tr>
-<td align="left">Trip</td>
-<td align="left"><code>integer</code></td>
-<td align="left"><code>true</code></td>
-<td align="left"><code>Trip_idTrip</code></td>
-</tr>
-<tr>
-<td align="left">Route</td>
-<td align="left"><code>varchar(40)</code></td>
+<td align="left">name</td>
+<td align="left"><code>varchar(20)</code></td>
 <td align="left"><code>false</code></td>
 <td align="left"><code>null</code></td>
 </tr>
 <tr>
-<td align="left">Trans_land</td>
+<td align="left">age</td>
 <td align="left"><code>integer</code></td>
 <td align="left"><code>false</code></td>
-<td align="left"><code>Trans_land_idTrans_land</code></td>
+<td align="left"><code>null</code></td>
 </tr>
 <tr>
-<td align="left">Crew</td>
+<td align="left">role</td>
+<td align="left"><code>varchar(20)</code></td>
+<td align="left"><code>false</code></td>
+<td align="left"><code>null</code></td>
+</tr>
+<tr>
+<td align="left">age_exp</td>
 <td align="left"><code>integer</code></td>
 <td align="left"><code>false</code></td>
-<td align="left"><code>Crew_idCrew</code></td>
+<td align="left"><code>null</code></td>
 </tr>
 </tbody>
 </table>
 <h2 id="create-table">Create table</h2>
-<pre><code>CREATE  TABLE Fly (
+<pre><code>CREATE  TABLE Member (
 
-  Plane_idPlane INT NOT NULL ,
+  idMember integer NOT NULL ,
 
-  Trip_idTrip INT NOT NULL ,
+  Name VARCHAR(45) NOT NULL ,
 
-  Route VARCHAR(45) NOT NULL ,
+  Age integer NOT NULL ,
 
-  Transit_landings_idTransit_landings INT NOT NULL ,
+  Role VARCHAR(45) NOT NULL ,
 
-  Crew_idCrew INT NOT NULL ,
+  Age_experience integer NOT NULL ,
 
-  PRIMARY KEY (Plane_idPlane, Trip_idTrip) ,
-
-  CONSTRAINT fk_Plane_has_Trip_Plane1
-
-    FOREIGN KEY (Plane_idPlane)
-
-    REFERENCES Plane (idPlane)
-
-    ON DELETE NO ACTION
-
-    ON UPDATE NO ACTION,
-
-  CONSTRAINT fk_Plane_has_Trip_Trip1
-
-    FOREIGN KEY (Trip_idTrip )
-
-    REFERENCES Trip (idTrip )
-
-    ON DELETE NO ACTION
-
-    ON UPDATE NO ACTION,
-
-  CONSTRAINT fk_Fly_Transit_landings1
-
-    FOREIGN KEY (Transit_landings_idTransit_landings)
-
-    REFERENCES Transit_landings(idTransit_landings)
-
-    ON DELETE NO ACTION
-
-    ON UPDATE NO ACTION,
-
-  CONSTRAINT fk_Fly_Crew1
-
-    FOREIGN KEY (Crew_idCrew)
-
-    REFERENCES Crew(idCrew)
-
-    ON DELETE NO ACTION
-
-    ON UPDATE NO ACTION);
+  PRIMARY KEY (idMember) );
 </code></pre>
 <h2 id="commands">Commands</h2>
-<pre><code>INSERT INTO  Fly VALUES (1,1,'Good',1,1), (2,2,'Bad',2,2), (3,3,'Normal',3,3);
+<pre><code>INSERT INTO Member VALUES (1, 'Roman', 20, 'Pilot',1), (2, 'Eithne', 20, 'Pilot',2), (3, 'Aglais', 30, 'Stuard',3);
 </code></pre></div>
             </div>
         </div>
