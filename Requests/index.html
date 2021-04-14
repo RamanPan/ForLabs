@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Requests - Aero</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+
+        <script src="../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">Aero</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href=".." class="nav-link">Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../AirCarrier/" class="nav-link">AirCarrier</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../Crew/" class="nav-link">Crew</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../Member/" class="nav-link">Member</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../Plane/" class="nav-link">Plane</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../Trip/" class="nav-link">Trip</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../Transitlangins/" class="nav-link">Transitlangins</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../Fly/" class="nav-link">Fly</a>
+                            </li>
+                            <li class="navitem active">
+                                <a href="./" class="nav-link">Requests</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../Fly/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" class="nav-link disabled">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#requests" class="nav-link">Requests</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#requst-1" class="nav-link">Requst 1</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#result" class="nav-link">Result</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#requst-2" class="nav-link">Requst 2</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#result_1" class="nav-link">Result</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#requst-3" class="nav-link">Requst 3</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#result_2" class="nav-link">Result</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#requst-4" class="nav-link">Requst 4</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#result_3" class="nav-link">Result</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#requst-5" class="nav-link">Requst 5</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#result_4" class="nav-link">Result</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#requst-6" class="nav-link">Requst 6</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#result_5" class="nav-link">Result</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#requst-7" class="nav-link">Requst 7</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#result_6" class="nav-link">Result</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#requst-8" class="nav-link">Requst 8</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#result_7" class="nav-link">Result</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#requst-9" class="nav-link">Requst 9</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#result_8" class="nav-link">Result</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#requst-10" class="nav-link">Requst 10</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#result_9" class="nav-link">Result</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#requst-11" class="nav-link">Requst 11</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#result_10" class="nav-link">Result</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#requst-12" class="nav-link">Requst 12</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#result_11" class="nav-link">Result</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#requst-13" class="nav-link">Requst 13</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#result_12" class="nav-link">Result</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#requst-14" class="nav-link">Requst 14</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#result_13" class="nav-link">Result</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="requests">Requests</h1>
+<h2 id="requst-1">Requst 1</h2>
+<p>Определить количество работников компании-авиаперевозчика.</p>
+<pre><code>SELECT workers FROM AirCareer;
+</code></pre>
+<h2 id="result">Result</h2>
+<table>
+<thead>
+<tr>
+<th align="left">workers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">250</td>
+</tr>
+<tr>
+<td align="left">500</td>
+</tr>
+<tr>
+<td align="left">300</td>
+</tr>
+</tbody>
+</table>
+<h2 id="requst-2">Requst 2</h2>
+<p>Определить количество сотрудников во втором экипаже.</p>
+<pre><code>SELECT Staff FROM Crew WHERE idCrew = 2;
+</code></pre>
+<h2 id="result_1">Result</h2>
+<table>
+<thead>
+<tr>
+<th align="left">Staff</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">3</td>
+</tr>
+</tbody>
+</table>
+<h2 id="requst-3">Requst 3</h2>
+<p>Вывести номера рейсов, пункты отправления и маршруты полёта, соответствующий данному рейсу</p>
+<pre><code>SELECT Trip.idTrip, Trip.pointdeparture, Fly.Route FROM Trip INNER JOIN Fly ON  idTrip = idFly;
+</code></pre>
+<h2 id="result_2">Result</h2>
+<table>
+<thead>
+<tr>
+<th align="left">idtrip</th>
+<th align="left">pointdeparute</th>
+<th align="left">route</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">1</td>
+<td align="left"><code>Moscow</code></td>
+<td align="left"><code>goof</code></td>
+</tr>
+<tr>
+<td align="left">2</td>
+<td align="left"><code>New-York</code></td>
+<td align="left"><code>bad</code></td>
+</tr>
+<tr>
+<td align="left">3</td>
+<td align="left"><code>Tiraspol</code></td>
+<td align="left"><code>asewome</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="requst-4">Requst 4</h2>
+<p>Вернуть список рейсов, совершенных в 2021 году</p>
+<pre><code>SELECT * FROM Trip WHERE (SELECT EXTRACT(YEAR FROM Date_departure) = 2021);
+</code></pre>
+<h2 id="result_3">Result</h2>
+<table>
+<thead>
+<tr>
+<th align="left">idtrip</th>
+<th align="left">pointdeparute</th>
+<th align="left">destination</th>
+<th align="left">date_departure</th>
+<th align="left">date_destination</th>
+<th align="left">distance</th>
+<th align="left">tickets</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">1</td>
+<td align="left"><code>Moscow</code></td>
+<td align="left"><code>SPB</code></td>
+<td align="left"><code>2021-02-10</code></td>
+<td align="left"><code>2021-03-10</code></td>
+<td align="left">700</td>
+<td align="left">525</td>
+</tr>
+<tr>
+<td align="left">2</td>
+<td align="left"><code>New-York</code></td>
+<td align="left"><code>Vashington</code></td>
+<td align="left"><code>2021-02-10</code></td>
+<td align="left"><code>2021-04-10</code></td>
+<td align="left">800</td>
+<td align="left">350</td>
+</tr>
+<tr>
+<td align="left">3</td>
+<td align="left"><code>Tiraspol</code></td>
+<td align="left"><code>SPB</code></td>
+<td align="left"><code>2021-02-10</code></td>
+<td align="left"><code>2021-05-10</code></td>
+<td align="left">1200</td>
+<td align="left">500</td>
+</tr>
+</tbody>
+</table>
+<h2 id="requst-5">Requst 5</h2>
+<p>Вывести список разниц между датой вылета и датой прибытия в рейсе.</p>
+<pre><code>SELECT EXTRACT(epoch FROM (Date_destination - Date_departure) )  FROM Trip; 
+</code></pre>
+<h2 id="result_4">Result</h2>
+<table>
+<thead>
+<tr>
+<th align="left">Different</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">1</td>
+</tr>
+<tr>
+<td align="left">2</td>
+</tr>
+<tr>
+<td align="left">3</td>
+</tr>
+</tbody>
+</table>
+<h2 id="requst-6">Requst 6</h2>
+<p>Вывести имя Авиаперевозчика и соответствующий ему самолёт</p>
+<pre><code>SELECT AirCarrier.name, Plane.Stamp FROM AirCarrier INNER JOIN Plane ON  idAirCarrier = idPlane;
+</code></pre>
+<h2 id="result_5">Result</h2>
+<table>
+<thead>
+<tr>
+<th align="left">name</th>
+<th align="left">stamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>Aeroflot</code></td>
+<td align="left"><code>Mark1</code></td>
+</tr>
+<tr>
+<td align="left"><code>EmiratesAir</code></td>
+<td align="left"><code>Mark2</code></td>
+</tr>
+<tr>
+<td align="left"><code>DjangoAir</code></td>
+<td align="left"><code>Mark3</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="requst-7">Requst 7</h2>
+<p>Вывести имя и роль сотрудника аэропорта.</p>
+<pre><code>SELECT CONCAT (name, role) FROM Member;
+</code></pre>
+<h2 id="result_6">Result</h2>
+<table>
+<thead>
+<tr>
+<th align="left">Concat</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>RomanPilot</code></td>
+</tr>
+<tr>
+<td align="left"><code>EithnePilot</code></td>
+</tr>
+<tr>
+<td align="left"><code>AglaisStuard</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="requst-8">Requst 8</h2>
+<p>Узнать кол-во символов названия авиаперевозчиков.</p>
+<pre><code>SELECT LENGTH(name) FROM AirCareer;
+</code></pre>
+<h2 id="result_7">Result</h2>
+<table>
+<thead>
+<tr>
+<th align="left">Length</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">8</td>
+</tr>
+<tr>
+<td align="left">11</td>
+</tr>
+<tr>
+<td align="left">10</td>
+</tr>
+</tbody>
+</table>
+<h2 id="requst-9">Requst 9</h2>
+<p>Вывести марку самолёта и соответствующую ей транзитную посадку.</p>
+<pre><code>SELECT Plane.Stamp, Transit_landings.Point_landings FROM Plane INNER JOIN Transit_landings ON  idPlane = idTransit_landings;
+</code></pre>
+<h2 id="result_8">Result</h2>
+<table>
+<thead>
+<tr>
+<th align="left">stamp</th>
+<th align="left">point_langing</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>Mark1</code></td>
+<td align="left"><code>Gibraltar</code></td>
+</tr>
+<tr>
+<td align="left"><code>Mark2</code></td>
+<td align="left"><code>Stambul</code></td>
+</tr>
+<tr>
+<td align="left"><code>Mark3</code></td>
+<td align="left"><code>Horizon</code></td>
+</tr>
+</tbody>
+</table>
+<p>Выбрать авиаперевозчиков, предоставляющих самолёт аэропорту:</p>
+<h2 id="requst-10">Requst 10</h2>
+<p>Вывести марку самолёта и соответствующую ей транзитную посадку.</p>
+<pre><code>SELECT * FROM AirCarrier WHERE id= ANY (SELECT AirCarrier FROM Plane);
+</code></pre>
+<h2 id="result_9">Result</h2>
+<table>
+<thead>
+<tr>
+<th align="left">idaircarrier</th>
+<th align="left">name</th>
+<th align="left">workers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">1</td>
+<td align="left"><code>Aeroflot</code></td>
+<td align="left">250</td>
+</tr>
+<tr>
+<td align="left">2</td>
+<td align="left"><code>EmiratesAir</code></td>
+<td align="left">500</td>
+</tr>
+</tbody>
+</table>
+<h2 id="requst-11">Requst 11</h2>
+<p>Выбрать пилота с именем Роман из сотрудников аэропорта:</p>
+<pre><code>SELECT * FROM Member WHERE name = “Roman” AND role = “Pilot”;
+</code></pre>
+<h2 id="result_10">Result</h2>
+<table>
+<thead>
+<tr>
+<th align="left">idmember</th>
+<th align="left">name</th>
+<th align="left">age</th>
+<th align="left">role</th>
+<th align="left">age_exp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">1</td>
+<td align="left"><code>Roman</code></td>
+<td align="left">20</td>
+<td align="left"><code>Pilot</code></td>
+<td align="left">1</td>
+</tr>
+</tbody>
+</table>
+<h2 id="requst-12">Requst 12</h2>
+<p>Вывести номера экипажов, имя и роль сотрудника, соответствующий данному экипажу</p>
+<pre><code>SELECT Crew.idCrew, Member.Name, Member.Role FROM Crew INNER JOIN Member ON  idMember = Member_idMember;
+</code></pre>
+<h2 id="result_11">Result</h2>
+<table>
+<thead>
+<tr>
+<th align="left">idcrew</th>
+<th align="left">name</th>
+<th align="left">role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">1</td>
+<td align="left"><code>Roman</code></td>
+<td align="left"><code>Pilot</code></td>
+</tr>
+<tr>
+<td align="left">2</td>
+<td align="left"><code>Eithne</code></td>
+<td align="left"><code>Pilot</code></td>
+</tr>
+<tr>
+<td align="left">3</td>
+<td align="left"><code>AglaisStuard</code></td>
+<td align="left"><code>Stuard</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="requst-13">Requst 13</h2>
+<p>Вернуть список транзитных посадок, совершённые в марте.</p>
+<pre><code>SELECT * FROM Transit_landings WHERE (SELECT EXTRACT(MONTH FROM Date_landings) = 3);
+</code></pre>
+<h2 id="result_12">Result</h2>
+<table>
+<thead>
+<tr>
+<th align="left">idlanding</th>
+<th align="left">point_langing</th>
+<th align="left">date_landing</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">2</td>
+<td align="left"><code>Stambul</code></td>
+<td align="left"><code>2021-03-10</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="requst-14">Requst 14</h2>
+<p>Вывести макс. кол-во мест  в  самолёте</p>
+<pre><code>SELECT MAX(places) FROM Plane ;
+</code></pre>
+<h2 id="result_13">Result</h2>
+<table>
+<thead>
+<tr>
+<th align="left">MAX</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">600</td>
+</tr>
+</tbody>
+</table></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js" defer></script>
+        <script src="../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
