@@ -210,6 +210,30 @@
               <ul class="nav flex-column">
               </ul>
             </li>
+            <li class="nav-item" data-level="2"><a href="#requst-15" class="nav-link">Requst 15</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#result_14" class="nav-link">Result</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#requst-16" class="nav-link">Requst 16</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#result_15" class="nav-link">Result</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#requst-17" class="nav-link">Requst 17</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#result_16" class="nav-link">Result</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
               </ul>
             </li>
         </ul>
@@ -537,7 +561,7 @@
 </tr>
 <tr>
 <td align="left">3</td>
-<td align="left"><code>AglaisStuard</code></td>
+<td align="left"><code>Aglais</code></td>
 <td align="left"><code>Stuard</code></td>
 </tr>
 </tbody>
@@ -577,6 +601,77 @@
 <tbody>
 <tr>
 <td align="left">600</td>
+</tr>
+</tbody>
+</table>
+<h2 id="requst-15">Requst 15</h2>
+<p>Узнать кол-во символов имён сотрудников.</p>
+<pre><code>SELECT LENGTH(name) FROM Member;
+</code></pre>
+<h2 id="result_14">Result</h2>
+<table>
+<thead>
+<tr>
+<th align="left">Length</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">5</td>
+</tr>
+<tr>
+<td align="left">6</td>
+</tr>
+<tr>
+<td align="left">6</td>
+</tr>
+</tbody>
+</table>
+<h2 id="requst-16">Requst 16</h2>
+<p>Выбрать сотрудника с возрастом 30 лет и опытом работы 3 года.</p>
+<pre><code>SELECT * FROM Member WHERE Age = 30 AND Age_experience = 3;
+</code></pre>
+<h2 id="result_15">Result</h2>
+<table>
+<thead>
+<tr>
+<th align="left">idmember</th>
+<th align="left">name</th>
+<th align="left">age</th>
+<th align="left">role</th>
+<th align="left">age_exp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">3</td>
+<td align="left"><code>Aglais</code></td>
+<td align="left">30</td>
+<td align="left"><code>Stuard</code></td>
+<td align="left">3</td>
+</tr>
+</tbody>
+</table>
+<h2 id="requst-17">Requst 17</h2>
+<p>Вывести место вылета и место прибытия рейса.</p>
+<pre><code>SELECT CONCAT (pointdeparture, Destination) FROM Member;
+</code></pre>
+<h2 id="result_16">Result</h2>
+<table>
+<thead>
+<tr>
+<th align="left">Concat</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>MoscowSPB</code></td>
+</tr>
+<tr>
+<td align="left"><code>New-YorkVashington</code></td>
+</tr>
+<tr>
+<td align="left"><code>TiraspolSPB</code></td>
 </tr>
 </tbody>
 </table></div>
