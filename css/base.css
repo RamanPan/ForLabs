@@ -22,9 +22,9 @@ body > .container {
 }
 
 pre, code {
-    background: #555;
-    color: #bababa;
-    border: 1px solid rgba(0,0,0,0.125);
+    background: #073642;
+    color: #839496;
+    border: 1px solid rgba(0,43,54,0.95);
     border-radius: 0.25rem;
 }
 
@@ -44,11 +44,7 @@ pre code {
 }
 
 a code {
-    color: #2a9fd6;
-}
-
-a:hover code {
-    color: #1d7097;
+    color: #2aa198;
 }
 
 kbd {
@@ -75,17 +71,17 @@ footer {
 /* Style the admonitions. */
 
 .admonition {
-    margin-bottom: 1em;
-    border: 1px solid rgba(0, 0, 0, 0.125);
+    margin-bottom: 1rem;
+    border: 1px solid rgba(0,43,54,0.95);
     border-radius: 0.25rem;
-    background-color: #282828;
+    color: #fff;
 }
 
 .admonition > .admonition-title {
     margin: 0;
     padding: 0.75rem 1rem;
-    background: rgba(0, 0, 0, 0.03);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    background: #444;
+    border-bottom: 1px solid rgba(0,43,54,0.95);
     border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
     font-size: 1rem;
 }
@@ -107,30 +103,27 @@ footer {
 /* Style each kind of admonition. */
 
 .admonition.note, .admonition.note > .admonition-title {
-    border-color: #6e2caf;
+    border-color: #268bd2;
 }
 
 .admonition.note > .admonition-title {
-    color: #fff;
-    background-color: #9933cc;
+    background: #268bd2;
 }
 
 .admonition.warning, .admonition.warning > .admonition-title {
-    border-color: #f05800;
+    border-color: #cb4b16;
 }
 
 .admonition.warning > .admonition-title {
-    color: #fff;
-    background-color: #ff8800;
+    background: #cb4b16;
 }
 
 .admonition.danger, .admonition.danger > .admonition-title {
-    border-color: #bd001f;
+    border-color: #d33682;
 }
 
 .admonition.danger > .admonition-title {
-    color: #fff;
-    background-color: #cc0000;
+    background: #d33682;
 }
 
 /*
@@ -150,6 +143,10 @@ footer {
 
 .bs-sidebar.card {
     padding: 0;
+}
+
+.bs-sidebar > .card {
+    background: #073642 !important;
 }
 
 /* Toggle (vertically flip) sidebar collapse icon */
@@ -225,8 +222,10 @@ h1:hover .headerlink, h2:hover .headerlink, h3:hover .headerlink, h4:hover .head
 }
 
 .dropdown-item.open {
-    color: #fff;
-    background-color: #2A9FD6;
+    color: rgba(255,255,255,0.75);
+    background: #002B36 -webkit-gradient(linear, left top, left bottom,
+                                         from(#002b36), to(#002B36)) repeat-x;
+    background: #002B36 linear-gradient(180deg, #002b36, #002B36) repeat-x;
 }
 
 .dropdown-submenu > .dropdown-menu {
@@ -244,13 +243,13 @@ h1:hover .headerlink, h2:hover .headerlink, h3:hover .headerlink, h4:hover .head
     border-color: transparent;
     border-style: solid;
     border-width: 5px 0 5px 5px;
-    border-left-color: #999999;
+    border-left-color: #ccc;
     margin-top: 5px;
     margin-right: -10px;
 }
 
 .dropdown-submenu:hover > a::after {
-    border-left-color: #fff;
+    border-left-color: #404040;
 }
 
 @media (min-width: 992px) {
